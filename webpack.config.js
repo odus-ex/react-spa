@@ -6,7 +6,7 @@ module.exports = {
   mode: "development",
   output: {
     path: path.resolve(__dirname, "./dist"),
-    filename: "appa.js",
+    filename: "bundle.js",
   },
   target: "web",
   devServer: {
@@ -28,6 +28,10 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: "babel-loader",
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
