@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   border: 2px solid purple;
-  width: 100%;
+  min-height: 50vh;
 
   @include breakpoint(large) {
     flex-direction: row;
