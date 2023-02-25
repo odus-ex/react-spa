@@ -1,12 +1,25 @@
 import React from "react";
-import { Navbar } from "./components";
+import "./scss/globals.scss";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <React.Fragment>
+    <>
       <Navbar />
-      <h1>Ajgav</h1>
-    </React.Fragment>
+      <main>
+        <div className="container">
+          <h1> Container 1</h1>
+          <p>Its body</p>
+        </div>
+        <div className="container">
+          <h1> Container 2</h1>
+          <p>Its body</p>
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 };
 

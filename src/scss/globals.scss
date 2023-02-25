@@ -1,0 +1,71 @@
+@import "./breakpoints";
+@import "./colors";
+@import "./layout";
+
+html {
+  box-sizing: border-box;
+  font-size: 100%; //match the default size in browser
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  //above stylings are called resets, to override and UA specific styles
+  font-family: Arial, Helvetica, sans-serif;
+  color: $text_dark;
+  min-width: 400px;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1;
+  transition: font-size 0.2s ease-in-out;
+}
+
+h1 {
+  font-size: 1.75rem;
+  @include breakpoint(medium) {
+    font-size: 2.75rem;
+  }
+  @include breakpoint(large) {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+
+  @include breakpoint(medium) {
+    font-size: 2rem;
+  }
+  @include breakpoint(large) {
+    font-size: 2.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.25rem;
+
+  @include breakpoint(medium) {
+    font-size: 1.5rem;
+  }
+  @include breakpoint(large) {
+    font-size: 2rem;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
