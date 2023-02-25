@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 
 //views
 import WelcomeView from "./views/welcome";
+import ValuesView from "./views/values";
 import ServicesView from "./views/services";
 
 const App = () => {
@@ -15,6 +16,9 @@ const App = () => {
       <Navbar />
       <div className="container">
         <WelcomeView />
+      </div>
+      <div className="container">
+        <ValuesView />
       </div>
       <div className="container">
         <ServicesView />

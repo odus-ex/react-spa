@@ -1,0 +1,37 @@
+@import "../../scss/breakpoints";
+
+.values {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @include breakpoint(large) {
+    padding: 5em;
+  }
+}
+
+.values__card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-around;
+  margin-top: 3em;
+
+  .values__card {
+    margin: 1.5em;
+  }
+
+  @include breakpoint(medium) {
+    padding: 2em;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .values__card {
+      margin: 3em 0;
+      width: 40%;
+    }
+  }
+}
