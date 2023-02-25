@@ -1,3 +1,92 @@
-.nav_wrapper {
-  border: 2px solid red;
+@import "../../scss/breakpoints";
+@import "../../scss/colors";
+
+.navbar {
+  display: flex;
+  padding: 0.5em 0.5em;
+  background-color: transparent;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  // border: 2px solid yellow;
+
+  @include breakpoint(large) {
+    padding: 0.25em 0.5em;
+  }
+}
+
+.navbar__items {
+  display: none;
+  transition: width 0.5s ease-in-out;
+
+  & > li {
+    color: $theme_dark;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    font-weight: 700;
+    font-size: 1.25em;
+  }
+
+  & > li:hover {
+    color: $theme_light;
+  }
+
+  @include breakpoint(medium) {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 50%;
+  }
+
+  @include breakpoint(large) {
+    width: 40%;
+  }
+
+  @include breakpoint(xlarge) {
+    width: 30%;
+  }
+}
+
+.navbar__burger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+
+  & > div {
+    width: 1.5em;
+    margin-bottom: 0.25em;
+    border: 2px solid $theme_dark;
+    border-radius: 20%;
+  }
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+
+.navbar__dropdown {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: $theme_light;
+  width: 100%;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+
+  .navbar__dropdown__options {
+    padding: 1em;
+    color: $text_light;
+  }
+}
+
+.navbar__dropdown_show {
+  height: 15em;
+}
+
+.navbar__dropdown_hide {
+  height: 0;
 }
