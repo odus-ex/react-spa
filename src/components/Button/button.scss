@@ -1,0 +1,32 @@
+@import "../../scss/colors";
+
+.button {
+  width: fit-content;
+  padding: 1em;
+  border-radius: 0.25em;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-weight: 700;
+  margin: 1em 0;
+}
+
+.button_primary {
+  background-color: $theme_dark;
+  color: $text_light;
+
+  &:hover {
+    background-color: $theme_light;
+    color: $text_dark;
+  }
+}
+
+.button_secondary {
+  background-color: $theme_light;
+  color: $text_dark;
+
+  &:hover {
+    background-color: $theme_dark;
+    color: $text_light;
+  }
+}

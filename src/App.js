@@ -1,23 +1,22 @@
 import React from "react";
 import "./scss/globals.scss";
 
+//components
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+
+//views
+import WelcomeView from "./views/welcome";
+// import ServicesView from "./views/offerings";
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <main>
-        <div className="container">
-          <h1> Container 1</h1>
-          <p>Its body</p>
-        </div>
-        <div className="container">
-          <h1> Container 2</h1>
-          <p>Its body</p>
-        </div>
-      </main>
+      <div className="container">
+        <WelcomeView />
+      </div>
+
       <Footer />
     </>
   );
