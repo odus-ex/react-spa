@@ -1,6 +1,6 @@
 @import "../../scss/breakpoints";
 
-.values {
+.values__view {
   display: flex;
   flex-direction: column;
   padding: 2em;
@@ -13,7 +13,7 @@
   }
 }
 
-.values__card__wrapper {
+.values__card__container {
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -36,15 +36,15 @@ function ValuesView() {
   }
 
   return (
-    <section className="values">
-      <h2>We are known for our values</h2>
+    <section className="values__view">
+      <h1>We are known for our values</h1>
       <p>
         At our company, we understand the importance of delivering exceptional
-        results to our clients. That's why we go above and beyond to provide
-        optimum and efficiently planned services that meet their unique needs
-        and challenges.{" "}
+        results to our clients. <br />
+        That's why we go above and beyond to provide optimum and efficiently
+        planned services that meet their unique needs and challenges.{" "}
       </p>
-      <section className="values__card__wrapper">
+      <section className="values__card__container">
         {valuesArray.map((valueObject) => ValuesCard(valueObject))}
       </section>
     </section>

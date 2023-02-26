@@ -1,1 +1,73 @@
 @import "../../scss/breakpoints";
+@import "../../scss/colors";
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2em;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+
+  @include breakpoint(medium) {
+    margin-top: 2em;
+    width: 80%;
+  }
+
+  @include breakpoint(large) {
+    margin-top: 4em;
+    width: 100%;
+  }
+
+  @include breakpoint(xlarge) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 6em;
+  }
+}
+
+.services__list__item {
+  display: flex;
+  flex-direction: column;
+  border: 0.25em solid $theme_dark;
+  margin-bottom: 2em;
+
+  .services__list__item__head {
+    display: flex;
+    background-color: $theme_dark;
+    color: $text_light;
+    padding: 1em;
+  }
+
+  .services__list__item__body {
+    display: flex;
+    padding: 1em;
+    font-style: italic;
+  }
+
+  @include breakpoint(large) {
+    flex-direction: row;
+
+    .services__list__item__head {
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .services__list__item__body {
+      text-align: left;
+    }
+  }
+
+  @include breakpoint(xlarge) {
+    width: 40%;
+    flex-direction: column;
+  }
+}
