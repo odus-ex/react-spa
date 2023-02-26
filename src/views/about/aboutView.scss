@@ -1,0 +1,46 @@
+@import "../../scss/breakpoints";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // border: 2px solid red;
+  padding: 2em;
+}
+
+.about__content {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  width: 80%;
+
+  @include breakpoint(large) {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  @include breakpoint(xlarge) {
+    width: 75%;
+  }
+}
+
+.about__gallery {
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(large) {
+    width: 60%;
+    padding: 4em;
+    align-items: flex-start;
+  }
+}
+
+.about__testimonials {
+  text-align: center;
+  @include breakpoint(large) {
+    width: 40%;
+  }
+}

@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import WelcomeView from "./views/welcome";
 import ValuesView from "./views/values";
 import ServicesView from "./views/services";
+import AboutView from "./views/about";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <WelcomeView />
       <ValuesView />
       <ServicesView />
+      <AboutView />
       <Footer />
     </>
   );

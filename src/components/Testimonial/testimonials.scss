@@ -1,0 +1,25 @@
+@import "../../scss/colors";
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials__list {
+  display: flex;
+  flex-direction: column;
+  max-width: 50em;
+  //   border: 2px solid green;
+}
+
+.testimonial__card {
+  background-color: $theme_dark;
+  padding: 2em;
+  margin: 2em 0;
+  color: $text_light;
+
+  & > p {
+    font-style: italic;
+    margin-bottom: 2em;
+  }
+}
