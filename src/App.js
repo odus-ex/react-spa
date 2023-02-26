@@ -14,15 +14,15 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <div className="container">
-        <WelcomeView />
-      </div>
-      <div className="container">
-        <ValuesView />
-      </div>
-      <div className="container">
-        <ServicesView />
-      </div>
+      {/* <div className="container"> */}
+      <WelcomeView />
+      {/* </div> */}
+      {/* <div className="container"> */}
+      <ValuesView />
+      {/* </div> */}
+      {/* <div className="container"> */}
+      <ServicesView />
+      {/* </div> */}
 
       <Footer />
     </>

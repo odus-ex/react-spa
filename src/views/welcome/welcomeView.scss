@@ -1,20 +1,36 @@
 @import "../../scss/breakpoints";
 
+.welcome__view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 60vh;
+  padding: 2em;
+
+  @include breakpoint(medium) {
+    padding: 3em;
+  }
+
+  @include breakpoint(large) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 6em;
+  }
+}
+
 .welcome__view__main {
   display: flex;
   flex-direction: column;
   text-align: center;
-  //   border: 2px solid red;
-  padding: 2em;
-
-  @include breakpoint(medium) {
-    padding: 5em;
-  }
 
   @include breakpoint(large) {
     width: 60%;
     text-align: left;
-    padding: 6em;
+  }
+
+  @include breakpoint(xlarge) {
+    width: 40%;
   }
 }
 
@@ -23,17 +39,10 @@
   flex-direction: column;
   text-align: center;
   align-items: center;
-  //   border: 2px solid blue;
-  padding: 2em;
-
-  @include breakpoint(medium) {
-    padding: 0 5em 5em 5em;
-  }
 
   @include breakpoint(large) {
     width: 40%;
-    text-align: left;
-    align-items: flex-start;
-    padding: 6em;
+    text-align: right;
+    align-items: flex-end;
   }
 }

@@ -7,7 +7,7 @@ import TypewriterComponent from "typewriter-effect";
 
 function WelcomeView() {
   return (
-    <>
+    <div className="welcome__view">
       <section className="welcome__view__main">
         <h1>Your premium consulting partners</h1>
         <p>
@@ -37,7 +37,7 @@ function WelcomeView() {
           clickHandler={() => console.log("CTA")}
         />
       </aside>
-    </>
+    </div>
   );
 }
 
