@@ -36,13 +36,13 @@
 .services__list__item {
   display: flex;
   flex-direction: column;
-  border: 0.25em solid $theme_dark;
+  border: 0.25em solid $theme_light;
   margin-bottom: 2em;
 
   .services__list__item__head {
     display: flex;
-    background-color: $theme_dark;
-    color: $text_light;
+    background-color: $theme_light;
+    color: $text_dark;
     padding: 1em;
   }
 

@@ -1,3 +1,7 @@
+@import "../../scss/colors";
+
 .footer {
-  border: 2px solid red;
+  height: 30vh;
+  background-color: $theme-dark;
+  color: $text_light;
 }
