@@ -8,7 +8,12 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
-  // border: 2px solid yellow;
+  background-color: $theme_dark;
+  color: $text_light;
+  box-shadow: $theme_light 0px 1em 4em;
+  position: sticky;
+  z-index: 1000;
+  top: 0;
 
   @include breakpoint(large) {
     padding: 0.25em 0.5em;
@@ -20,7 +25,6 @@
   transition: width 0.5s ease-in-out;
 
   & > li {
-    color: $theme_dark;
     cursor: pointer;
     transition: color 0.2s ease-in-out;
     font-weight: 700;
@@ -55,7 +59,7 @@
   & > div {
     width: 1.5em;
     margin-bottom: 0.25em;
-    border: 2px solid $theme_dark;
+    border: 2px solid #ffffff;
     border-radius: 20%;
   }
 

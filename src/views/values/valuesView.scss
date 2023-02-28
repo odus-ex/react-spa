@@ -19,19 +19,47 @@
   justify-content: center;
   align-items: space-around;
   margin-top: 3em;
+  width: 80%;
 
   .values__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 1.5em;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+    .values__card__icon {
+      width: 10em;
+      height: 10em;
+      margin-bottom: 2em;
+      & > img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    & > p {
+      font-style: italic;
+    }
   }
 
-  @include breakpoint(medium) {
+  @include breakpoint(large) {
     padding: 2em;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    width: 60%;
     .values__card {
       margin: 3em 0;
       width: 40%;
     }
+  }
+
+  @include breakpoint(xlarge) {
+    width: 50%;
   }
 }

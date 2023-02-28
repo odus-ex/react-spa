@@ -1,34 +1,39 @@
 import React from "react";
 import "./valuesView.scss";
 
+import EthicalIcon from "../../assets/ethical.png";
+import IntegralIcon from "../../assets/integral.png";
+import AccountableIcon from "../../assets/accountable.png";
+import InnovativeIcon from "../../assets/innovative.png";
+
 function ValuesView() {
   const valuesArray = [
     {
-      name: "values1",
+      name: "Ethical",
       description: "Some value which is about one or two lines",
-      IconComponent: <h1>Icon</h1>,
+      IconComponent: <img src={EthicalIcon} />,
     },
     {
-      name: "values2",
+      name: "Integral",
       description: "Some value which is about one or two lines",
-      IconComponent: <h1>Icon</h1>,
+      IconComponent: <img src={IntegralIcon} />,
     },
     {
-      name: "values3",
+      name: "Accountable",
       description: "Some value which is about one or two lines",
-      IconComponent: <h1>Icon</h1>,
+      IconComponent: <img src={AccountableIcon} />,
     },
     {
-      name: "values4",
+      name: "Innovative",
       description: "Some value which is about one or two lines",
-      IconComponent: <h1>Icon</h1>,
+      IconComponent: <img src={InnovativeIcon} />,
     },
   ];
 
   function ValuesCard({ IconComponent, name, description }) {
     return (
       <div key={name} className="values__card">
-        {IconComponent}
+        <section className="values__card__icon">{IconComponent}</section>
         <h3>{name}</h3>
         <p>{description}</p>
       </div>
